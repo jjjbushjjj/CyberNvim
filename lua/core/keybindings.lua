@@ -42,7 +42,7 @@ end
 
 -- NeoTree
 if enabled(group, "neotree") then
-	map("n", "<leader>nt", "<CMD>Neotree reveal left<CR>")
+	map("n", "<leader>nt", "<CMD>Neotree source=filesystem reveal=true position=right toggle=true<CR>")
 	map("n", "<leader>nf", "<CMD>Neotree reveal float<CR>")
 end
 
@@ -67,7 +67,7 @@ map("c", "<C-n>", "<Down>")
 
 -- Telescope
 if enabled(group, "telescope") then
-	map("n", "<leader>ff", "<CMD>Telescope git_files hidden=true<CR>", { desc = "Telescope Find Files" })
+	map("n", "<leader>ff", "<CMD>Telescope find_files hidden=true<CR>", { desc = "Telescope Find Files" })
 	map("n", "<leader>fg", "<CMD>Telescope live_grep<CR>")
 	map("n", "<leader>fb", "<CMD>Telescope buffers<CR>")
 	map("n", "<leader>fh", "<CMD>Telescope help_tags<CR>")
