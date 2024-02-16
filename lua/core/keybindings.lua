@@ -85,6 +85,9 @@ if enabled(group, "notify") then
 	map("i", "<ESC>", "<CMD>lua require('notify').dismiss()<CR><ESC>")
 end
 
+-- Spectre
+map("n", "<leader>S", "<CMD>lua require('spectre').toggle()<CR>", {desc = "Spectre toggle"})
+
 -- More LSP stuff
 if enabled(group, "lsp_zero") then
 	_G.buf = vim.lsp.buf

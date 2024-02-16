@@ -113,7 +113,7 @@ M.enable_plugins = {
 	surround = true,
 	treesitter = false,
 	ufo = true,
-	onedark = true,
+	onedark = false,
 	project = true,
 	scope = true,
 	telescope = true,
@@ -126,7 +126,10 @@ M.enable_plugins = {
 }
 
 -- add extra plugins in here
-M.plugins = {}
+M.plugins = {
+  'EdenEast/nightfox.nvim',
+  'nvim-pack/nvim-spectre'
+}
 
 -- add extra configuration options here, like extra autocmds etc.
 -- feel free to create your own separate files and require them in here
